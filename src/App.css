@@ -1,0 +1,334 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: fangsong;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+width: 100%;
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background: #fff;
+color: white;
+}
+
+.logo { 
+    color: #3546bf;
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hero{
+    background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    color:rgb(90, 88, 88);
+    h3{ font-size: 20px;
+        margin-top: 70px;  color:rgb(43, 97, 116);
+    }
+    h1{color:rgb(92, 89, 89);}
+    button{
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #3546bf;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 15%;
+        font-weight: bold;
+        font-size: 16px;
+      &:hover{
+        background-color: #ebe6e6;
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+}
+.nav-links {
+display: flex;
+gap: 20px;
+}
+.nav-links a {
+color:#262566;
+text-decoration: none;
+}
+.page {
+padding: 50px;
+}
+.destinations {
+    padding: 20px;
+    text-align: center;
+    h2 {
+        padding-top: 20px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+     .description {
+
+        padding-bottom: 20px;
+        color:rgb(22, 21, 21);
+        font-size: 18px;
+        
+    }
+}
+.cards{
+    display: flex;
+    gap: 20px;      
+    justify-content: center;
+    flex-grow: 1;
+    color:rgb(10, 10, 10);
+    .card{
+        flex: 1;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}
+
+.cta{
+    display: flex;
+    background-color: #f9f9fc;
+    flex-direction: column;
+    margin-top:40px;
+    button{
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #3546bf;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 15%;
+        font-weight: bold;
+        font-size: 16px;
+      &:hover{
+        background-color: #ebe6e6;
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+
+}
+
+.Aboutbanner{
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    h1{margin-top:3px}
+    .about-title{
+        color:rgb(86, 86, 94);
+        padding-top: 40px;
+    }
+}
+.about-description{
+    padding: 20px;
+    text-align: left;
+    color:rgb(10, 10, 10);
+    font-size: 18px;
+    display: flex;
+    .left-content{width: 50%;
+        margin-top: 50px;  
+        h2{margin-top: 30px;
+        margin-bottom: 20px;}  
+    }
+     .right-content{
+        width: 50%;
+        img{
+        width: 100%;
+        border-radius: 16px;
+        }
+    } 
+}
+
+.about-mission{
+    padding: 20px;
+    background-color: #f9f9fc;
+    margin: 20px;
+    h3{
+    margin-top: 40px;
+    }
+    color:rgb(10, 10, 10);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-banner{
+    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .contact-title{
+        color:rgb(15, 13, 13);
+    }
+    .contact-description{
+        color:rgb(75, 73, 73);
+    }
+}
+ .contact-content{
+    display: flex;   
+        .contact-info{
+            padding: 50px;
+            flex-direction:column;
+            display: flex;
+            text-align: left;
+            width: 50%;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            background:whitesmoke;
+            p{margin:10px 0;}
+        }
+        .contact-form{
+            padding: 50px;
+            width: 50%;
+            form{
+                display: flex;
+                flex-direction: column;
+                background:whitesmoke;
+                gap: 10px;
+                input, textarea{
+                    padding: 10px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                }
+                button{
+                    padding: 10px;
+                    background-color: #3546bf;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    width: 70%;
+                    align-self: center;
+                }
+                label{
+                    font-weight: bold;
+                    text-align:left;
+                }
+            }
+        }
+    }
+ 
+.careers-banner{
+    background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+   padding-top: 20px;
+    text-align: center;
+    p{
+        color:rgb(5, 4, 4);
+    }
+}
+.careers-button{
+    padding: 40px 20px;
+    background-color: #f9f9fc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+     button{
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #535e97;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 30%;
+        align-self: center;
+        &:hover{
+            background-color: #ebe6e6;
+            color: #000;
+            text-decoration: underline;
+        }
+     }
+}
+
+.destinations-banner{
+    background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.destinations-button{
+    padding: 40px 20px;
+    background-color: #f9f9fc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    
+     button{
+        padding: 10px;
+        margin:10px;
+        margin-top: 20px;
+        background-color: #53975e;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 40px;
+        cursor: pointer;
+        width: 10%;
+        align-self: center;
+        &:hover{
+            background-color: #ebe6e6;
+            color: #000;
+            text-decoration: underline;
+        }
+     }
+}
+.footer {
+    background: #d7dadb;
+    color: rgb(27, 26, 26);
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    h2{margin-bottom: 10px;}
+}
+
+@media (max-width: 768px) {
+.navbar {
+flex-direction: column;
+gap: 15px;
+padding: 20px;
+}
+.nav-links {
+flex-direction: column;
+text-align: center;
+}
+.page {
+padding: 25px;
+}
+.course-grid {
+grid-template-columns: 1fr;
+}
+}

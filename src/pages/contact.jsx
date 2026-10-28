@@ -2,7 +2,7 @@ function Contact(){
   return (
     <div>
       <div className="contact-banner">
-         <p className="contact-title">WE ARE HERE TO HELP!</p>
+         <p className="contact-title">WE  ARE  HERE  TO  HELP!</p>
         <h1 className="contact-heading">Contact Us</h1>
         <p className="contact-description">Tell us about your next adventure!</p>
       </div>
@@ -23,8 +23,14 @@ function Contact(){
             <input type="text" id="name" placeholder="Your Name" />
             <label for="email">Your Email</label>
             <input type="email" id="email" placeholder="Your Email" />
-            <label for="message">Your Message</label>
-            <textarea id="message" placeholder="Your Message"></textarea>
+            <label id="subject">Subject</label>
+            <select className="subject-dropdown" id="subject" name="subject">
+              <option>Trip Enquiry</option>
+              <option>Booking Questions</option>
+              <option>General Feedback</option>
+              </select>
+              <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Your Message" rows="7"></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>

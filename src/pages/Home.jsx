@@ -3,7 +3,7 @@ function Home() {
 return (
 <div>
 <section className="hero">
-         <h3>Dream.Explore.Discover.</h3>
+         <h3>Dream.  Explore.  Discover.</h3>
          <h1>Your Next Adventure Starts Here!</h1>
          <p>The world is yours to explore.</p>
         
@@ -17,7 +17,7 @@ return (
 
 
 
-<section className="destinations">
+<section className="home-destinations">
     <h2>Popular Destinations</h2>
      <p className="description">
      Discover breathtaking destinations, create unforgettable memories,
@@ -26,21 +26,21 @@ return (
     <div className="cards">
         <div className="card">
             <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500"
-                alt="Bali" className="bounce-image" />
+                alt="Bali"  />
             <h3>Bali</h3>
             <p>Experience tropical beaches and nature</p>
         </div>
 
        <div className="card">
             <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500"
-                alt="Paris" className="bounce-image" />
+                alt="Paris"  />
             <h3>Paris</h3>
         <p>Explore famous landmarks and culture.</p>
         </div>
 
         <div className="card">
             <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500"
-             alt="Goa" className="bounce-image"/>
+             alt="Goa" />
             <h3>Goa</h3>
             <p>Enjoy sunny beaches and relaxing holidays.</p>
         </div>

@@ -16,25 +16,28 @@ align-items: center;
 padding: 20px 50px;
 background: #fff;
 color: white;
+font-size: 20px;
 }
+
 
 .logo { 
     color: #3546bf;
     font-family: 'Arial Black', sans-serif;
     font-weight: bold;
     text-decoration: none;
+    font-size: 25px;
 }
 .hero{
-    background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80');
+    background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1800&q=85');
     background-size: cover;
     height: 400px;
     display: flex;
     flex-direction: column;
-    color:rgb(90, 88, 88);
+    color:rgb(238, 232, 232);
     h3{ font-size: 20px;
-        margin-top: 70px;  color:rgb(43, 97, 116);
+        margin-top: 90px;  color:rgb(187, 223, 236);
     }
-    h1{color:rgb(92, 89, 89);}
+    h1{color:white;}
     button{
         padding: 10px;
         margin-top: 20px;
@@ -60,11 +63,13 @@ gap: 20px;
 .nav-links a {
 color:#262566;
 text-decoration: none;
+&:hover{color:blue;}
 }
+
 .page {
 padding: 50px;
 }
-.destinations {
+.home-destinations {
     padding: 20px;
     text-align: center;
     h2 {
@@ -94,24 +99,29 @@ padding: 50px;
             height: 250px;
             object-fit: cover;
             border-radius: 10px;
+            transition: transform 0.5s ease;
+            &:hover {
+               transform: scale(1.1);
+            }
         }
-    }
+    } 
 }
-
 .cta{
     display: flex;
-    background-color: #f9f9fc;
+    background-color: hsl(195, 44%, 96%);
     flex-direction: column;
     margin-top:40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     button{
-        padding: 10px;
+        padding: 15px;
         margin-top: 20px;
         background-color: #3546bf;
         color: white;
         border: none;
-        border-radius: 10px;
+        border-radius: 15px;
         cursor: pointer;
-        width: 15%;
+        width: 10%;
         font-weight: bold;
         font-size: 16px;
       &:hover{
@@ -126,13 +136,14 @@ padding: 50px;
 .Aboutbanner{
     background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
     background-size: cover;
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     h1{margin-top:3px}
     .about-title{
         color:rgb(86, 86, 94);
-        padding-top: 40px;
+        padding-top: 100px;
     }
 }
 .about-description{
@@ -157,12 +168,12 @@ padding: 50px;
 
 .about-mission{
     padding: 20px;
-    background-color: #f9f9fc;
+    background-color: #fafafc;
     margin: 20px;
     h3{
     margin-top: 40px;
     }
-    color:rgb(10, 10, 10);
+    color:rgb(61, 60, 60);
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -194,12 +205,12 @@ padding: 50px;
             width: 50%;
             margin-bottom: 15px;
             line-height: 1.5;
-            background:whitesmoke;
             p{margin:10px 0;}
         }
         .contact-form{
             padding: 50px;
             width: 50%;
+            background-color: rgb(246, 248, 248);
             form{
                 display: flex;
                 flex-direction: column;
@@ -220,9 +231,19 @@ padding: 50px;
                     width: 70%;
                     align-self: center;
                 }
+                .subject-dropdown{
+                    width:100%;
+                    height:50px;
+                    font-size: 15px;
+                    padding:10px 12px;
+                    background-color: white;    
+                    cursor: pointer;
+                    border-radius: 4px;
+                }
                 label{
                     font-weight: bold;
                     text-align:left;
+                    padding:10px
                 }
             }
         }
@@ -239,6 +260,11 @@ padding: 50px;
     p{
         color:rgb(5, 4, 4);
     }
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 30px;
 }
 .careers-button{
     padding: 40px 20px;
@@ -266,6 +292,51 @@ padding: 50px;
      }
 }
 
+.job-list {
+  max-width: 850px;
+  margin: 0 auto;
+  width:60%;
+  gap: 18px;
+}
+
+.job-card {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 25px;
+  padding: 25px;
+  border: 1px solid #e1eaf5;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+
+}
+.primary-button{
+    height: 29px;
+    width: 95px;
+    background-color: #4646a5;
+    color: white;
+    font-weight: bold;
+    border-radius:5px;
+    cursor:pointer;
+}
+.job-card h3 {
+  margin: 0 0 8px;
+}
+.job-card p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+.filter {
+  background-color: white;
+  color: #102747;
+  border: 1px solid #ddd;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin:7px;
+}
+
 .destinations-banner{
     background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969');
     background-size: cover;
@@ -274,45 +345,71 @@ padding: 50px;
     flex-direction: column;
     align-items:center;
     justify-content: flex-start;
+    
 }
 
-.destinations-button{
-    padding: 40px 20px;
-    background-color: #f9f9fc;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    
-     button{
-        padding: 10px;
-        margin:10px;
-        margin-top: 20px;
-        background-color: #53975e;
-        color: white;
-        border: 2px solid grey;
-        border-radius: 40px;
-        cursor: pointer;
-        width: 10%;
-        align-self: center;
-        &:hover{
-            background-color: #ebe6e6;
-            color: #000;
-            text-decoration: underline;
-        }
-     }
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  padding-bottom: 40px;
+  margin-top:40px ;
+}
+.destination-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e8eef6;
+  box-shadow: 0 8px 28px #1734560c;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px #17345618;
+}
+.filters{
+    margin: 30px;
+}
+.destination-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.card-content p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.price-row{
+    color:blue;
+    display:flex;
+    justify-content:space-between;
+.text-link {
+  color:blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+}
+.active-filter {
+  background-color: blue;
+  color: white;
 }
 .footer {
-    background: #d7dadb;
-    color: rgb(27, 26, 26);
-    text-align: center;
-    padding-top: 10px;
-    margin-top: 20px;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    h2{margin-bottom: 10px;}
+  color: rgb(6, 4, 10);
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {

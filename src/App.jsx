@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Destinations from "./pages/destinations";
 import Careers from "./pages/careers";
 import Contact from "./pages/contact";
+import './App.css'
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+         <Route path="/about" element={<About />} />
         <Route path="/destinations" element={<Destinations />} />
-        <Route path="/about" element={<About />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
